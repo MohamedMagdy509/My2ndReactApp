@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a5a7a764.css",
-    "main.js": "./static/js/main.b52890a4.js",
+    "main.js": "./static/js/main.44464d59.js",
     "static/media/fa-solid-900.ttf": "./static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/paladins.png": "./static/media/paladins.b44d33d6e7ee1ba8.0fddd1fbe0a5e0a0af93.png",
     "static/media/gaming.jpg": "./static/media/gaming.ebaf2ffc84f4451d.d5751ff804c935b205d3.jpg",
@@ -16,10 +16,10 @@
     "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "./index.html",
     "main.a5a7a764.css.map": "./static/css/main.a5a7a764.css.map",
-    "main.b52890a4.js.map": "./static/js/main.b52890a4.js.map"
+    "main.44464d59.js.map": "./static/js/main.44464d59.js.map"
   },
   "entrypoints": [
     "static/css/main.a5a7a764.css",
-    "static/js/main.b52890a4.js"
+    "static/js/main.44464d59.js"
   ]
 }
