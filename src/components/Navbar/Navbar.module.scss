@@ -1,0 +1,30 @@
+@import "../../index.scss";
+@mixin DropShadow($x, $y, $z, $c) {
+    -webkit-filter: drop-shadow($x $y $z $c);
+    -ms-filter: drop-shadow($x $y $z $c);
+    -moz-filter: drop-shadow($x $y $z $c);
+    -o-filter: drop-shadow($x $y $z $c);
+}
+
+.bgNav{
+    background-color: $bg-color;
+    z-index: 999;
+}
+.logoFont{
+    font-family: $logo-font;
+}
+.navLogoStyle{
+    width: 75px;
+    @include DropShadow(0px, 0px ,5px ,blue );
+}
+
+.loginFree:hover{
+    background-color: transparent !important;
+    color:blue !important;
+    border-color: blue !important;
+}
+.loginFree:active{
+    background-color: transparent !important;
+    color: rgba(0,0,255,0.7) !important;
+    border-color: rgba(0,0,255,0.7) !important;
+}

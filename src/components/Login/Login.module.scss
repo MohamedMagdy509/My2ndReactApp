@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.bgGray{
+    background-color: $bg-gray;
+}
+.regImg{
+    background-image: url("../../assets/images/gaming.ebaf2ffc84f4451d.jpg");
+    background-position: center;
+    background-size: 100% 100%;  
+}
+.formBtn{
+    background-color: #3a3f44 !important;
+    border-color: #22241d !important;
+}
+.formBtn:hover{
+    background-color: #3a3f44 !important;
+    border-color: #22241d !important;
+}
+.formBtn:active{
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+.myLink{
+    transition: all 0.25s 0s ease-in-out;
+}
+.myLink:hover{
+    position: relative;
+    transform: scale(1.05);
+}

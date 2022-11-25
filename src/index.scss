@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "logoFont";
+    src: url(assets/fonts/XanhMono-Italic.ttf);
+};
+$logo-font:"logoFont";
+$font-color: #aaa;
+$bg-color: #272b30;
+$bg-gray: #32383e;
+
+.mainTextColor{
+    color: $font-color !important;
+}
+body{
+    background-color: $bg-color;
+    color: $font-color;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.myLink{
+    transition: all 0.25s 0s ease-in-out;
+}
+.myLink:hover{
+    position: relative;
+    transform: scale(1.05);
+}
+.smallFont{
+    font-size: 0.85rem;
+}
