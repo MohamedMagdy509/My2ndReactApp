@@ -47,11 +47,11 @@ export default function Details() {
                 <p>{gameDetails.description}</p>
                 <h5>Minimum System Requirements</h5>
                 <ul className='list-unstyled'>
-                    <li><span className='fw-bold'>graphics : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.graphics:""}</li>
-                        <li><span className='fw-bold'>memory : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.memory:""}</li>
-                        <li><span className='fw-bold'>os : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.os :""}</li>
-                        <li><span className='fw-bold'>processor : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.processor :""}</li>
-                        <li><span className='fw-bold'>storage : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.storage :""}</li>
+                {gameDetails.platform === "Windows" ?<li><span className='fw-bold'>graphics : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.graphics:""}</li>:""}
+                {gameDetails.platform === "Windows" ? <li><span className='fw-bold'>memory : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.memory:""}</li>:""}
+                        {gameDetails.platform === "Windows" ?<li><span className='fw-bold'>os : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.os :""}</li>:""}
+                        {gameDetails.platform === "Windows" ?<li><span className='fw-bold'>processor : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.processor :""}</li>:""}
+                        {gameDetails.platform === "Windows" ?<li><span className='fw-bold'>storage : </span>{gameDetails.minimum_system_requirements !== undefined ? gameDetails.minimum_system_requirements.storage :""}</li>:""}
                 </ul>
 
                 <h5>{gameDetails.title} Screenshots</h5>
