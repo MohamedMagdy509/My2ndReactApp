@@ -21,7 +21,7 @@ export default function App() {
 
   let routes = createBrowserRouter([
     {
-      path: '/My2ndReactApp', element: <MasterLayout logOutUser={logOutUser}/>,errorElement:<ErrorPage/>, children: [
+      path: '/', element: <MasterLayout logOutUser={logOutUser}/>,errorElement:<ErrorPage/>, children: [
         { index: true, element: <ProtectRoute userData={userData}><Home /></ProtectRoute> },
         { path: 'login', element: <Login /> },
         { path: 'register', element: <Register /> },
