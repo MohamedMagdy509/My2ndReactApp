@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom'
 
 export default function ProtectRoute(props) {
         if(props.userData === ""){
-            return <Navigate to="/My2ndReactApp/login"/>
+            return <Navigate to="/login"/>
         }
         else{
             return props.children

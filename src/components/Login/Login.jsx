@@ -12,7 +12,7 @@ export default function Login() {
     const [myUserValErrors, setMyUserValErrors] = useState([]);
     useEffect(() => {
         if(userData !==null)
-        changePage("/My2ndReactApp/home");
+        changePage("/home");
     }, [userData]);
 let changePage = useNavigate();
 
@@ -41,7 +41,7 @@ let changePage = useNavigate();
             if(data.message === 'success'){
                 localStorage.setItem("token",data.token);
                 saveUserData();
-                changePage("/My2ndReactApp/home");
+                changePage("/home");
             }
             else{
                 setApiMessage(data.message);

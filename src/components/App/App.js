@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Games from '../All/Games'
 import Details from '../Details/Details'
 import Home from '../Home/Home'
@@ -19,9 +19,9 @@ export default function App() {
     setUserData(null);
 }
 
-  let routes = createBrowserRouter([
+  let routes = createHashRouter([
     {
-      path: '/My2ndReactApp', element: <MasterLayout logOutUser={logOutUser}/>,errorElement:<ErrorPage/>, children: [
+      path: '/', element: <MasterLayout logOutUser={logOutUser}/>,errorElement:<ErrorPage/>, children: [
         { index: true, element: <ProtectRoute userData={userData}><Home /></ProtectRoute> },
         { path: 'login', element: <Login /> },
         { path: 'register', element: <Register /> },
